@@ -5,9 +5,18 @@ void main() {
       home: Scaffold(
     appBar: AppBar(
       title: const Text("My Coffee Id"),
-      backgroundColor: Colors.brown[700],
+      backgroundColor: Colors.brown[200],
       centerTitle: true,
     ),
-    body: const Text("hello ninjustu"),
+    body: const Home(),
   )));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text("hello ninjust");
+  }
 }
