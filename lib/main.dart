@@ -8,5 +8,6 @@ void main() {
       backgroundColor: Colors.brown[700],
       centerTitle: true,
     ),
+    body: const Text("hello ninjustu"),
   )));
 }
