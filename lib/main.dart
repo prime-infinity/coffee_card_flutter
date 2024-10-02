@@ -44,3 +44,43 @@ class SandBoxColumn extends StatelessWidget {
     );
   }
 }
+
+class SandBoxRow extends StatelessWidget {
+  const SandBoxRow({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 40,
+        title: const Text(
+          "sandbox row",
+          style: TextStyle(color: Colors.red),
+        ),
+        backgroundColor: Colors.grey,
+        centerTitle: true,
+      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 100,
+            color: Colors.red,
+            child: const Text("one"),
+          ),
+          Container(
+            height: 200,
+            color: Colors.green,
+            child: const Text("two"),
+          ),
+          Container(
+            height: 300, //note that column width is largest item width
+            color: Colors.blue,
+            child: const Text("three"),
+          ),
+        ],
+      ),
+    );
+  }
+}
