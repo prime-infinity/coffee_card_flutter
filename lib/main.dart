@@ -2,11 +2,11 @@ import 'package:coffee_card/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: SandBox()));
+  runApp(const MaterialApp(home: Home()));
 }
 
-class SandBox extends StatelessWidget {
-  const SandBox({super.key});
+class SandBoxColumn extends StatelessWidget {
+  const SandBoxColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class SandBox extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 40,
         title: const Text(
-          "sandbox",
+          "sandbox column",
           style: TextStyle(color: Colors.red),
         ),
         backgroundColor: Colors.grey,
